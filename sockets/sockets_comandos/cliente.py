@@ -6,7 +6,7 @@ import os
 
 class Cliente:
 
-    def __init__(self, host="localhost", port=7002):
+    def __init__(self, host="localhost", port=7003):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         try:
             self.sock.connect((str(host), int(port)))
